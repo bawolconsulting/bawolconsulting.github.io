@@ -1,0 +1,855 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body a {
+    transition:0.5s all;
+}
+
+h1, h2, h3 {
+    margin:0;
+    font-weight:400;
+}
+
+p {
+    margin:0;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+address {
+    font-style: normal;
+}
+
+section h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+section p, section li {
+    font-size: 1.3em;
+    line-height: 1.8em;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+footer .container div {
+    display: block;
+    float: left;
+}
+
+.ico {
+    display: inline-block;
+    background-size: 1.4em;
+    padding-left: 1.8em;
+    background-repeat: no-repeat;
+}
+
+.ico-linkedin {
+    background-image: url(../images/icons/linkedin-square.svg);
+}
+
+.ico-phone {
+    background-image: url(../images/icons/phone-square.svg);
+}
+
+.ico-at {
+    background-image: url(../images/icons/at.svg);
+}
+
+.copyright {
+    color:#848484;
+    margin-top:2em;
+    font-size: 0.8em;
+}
+
+.copyright a {
+    color:#848484;
+}
+
+.copyright a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.shape-circle {
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    border:2px solid #66b8e0;
+    display: inline-block;
+}
+
+.shape-circle.briefcase {
+    background: #0088CC url(../images/icons/briefcase.svg) no-repeat 15px;
+    background-size: 65px;
+}
+
+.shape-circle.users {
+    background: #0088CC url(../images/icons/users.svg) no-repeat 15px;
+    background-size: 65px;
+}
+
+.shape-circle.thumbs-up {
+    background: #0088CC url(../images/icons/thumbs-up.svg) no-repeat 15px;
+    background-size: 65px;
+}
+
+#presentation {
+    color: #fff;
+    padding-bottom: 2em;
+    background: #29c0ff;
+    min-height: 205px;
+}
+
+#presentation h2 {
+    text-align: left;
+}
+
+#presentation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+
+#presentation ul li {
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+}
+
+#recrutement {
+    white-space: nowrap;
+}
+
+#recrutement .summary, #recrutement .steps {
+    display: inline-block;
+    width: 50%;
+    white-space: normal;
+    vertical-align: top;
+}
+
+#recrutement .steps {
+    background:url(../images/recrutement.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 430px;
+}
+
+#recrutement .steps ul {
+    margin: 3.1em 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+#recrutement .steps ul li {
+    color: #fff;
+    margin: 25px 0px 0px 35px;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+#recrutement .steps ul li i {
+    font-weight: 600;
+    color: #29c0ff;
+    margin-right: 24px;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+#recrutement h3 {
+    text-align: center;
+    margin: 1.5em 0;
+    font-size: 1.5em;
+}
+
+#conseil ul {
+    list-style: none;
+    padding: 0 1em;
+}
+
+#conseil ul li {
+    list-style: none;
+    background: url("../images/icons/chevron-right.svg") no-repeat 0 0.5em;
+    background-size: 1em;
+    padding-left: 1em;
+    color: #eb5424;
+}
+
+.conseil-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.conseil-wrapper div, .conseil-wrapper ul {
+    width: 50%;
+}
+
+.conseil-wrapper ul {
+    height: 100%;
+}
+
+.conseil-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+#contact {
+    width: 75%;
+}
+
+#contact h3 {
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    margin-bottom: .5em;
+    color: #fff;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact p {
+    color: #848484;
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+#contact a {
+    color: #848484;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    position: absolute;
+    top: 10px;
+    z-index: 9999;
+}
+
+.banner-info {
+    float: right;
+    margin: 14em 8em 0 0;
+}
+
+.navigation {
+    float: right;
+    margin-top: 20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color:#29c0ff;
+}
+
+.nav > li > a {
+    margin: 0px 18px !important;
+    padding: 0;
+    font-size: 1.3em;
+
+}
+.nav > li > a:hover {
+    color: #eb5424 !important;
+}
+
+ul.nav.navbar-nav li a.active {
+    color: #eb5424 !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #eb5424;
+    background:none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #eb5424;
+    background: none;
+}
+
+.navbar-nav > li {
+    display: inline-block !important;
+}
+
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar {
+    min-height: 38px;
+}
+
+.header-nav {
+    color: #000;
+    position: relative;
+}
+
+.banner {
+    background: url('../images/banner.jpg') no-repeat -0px 0;
+    min-height: 670px;
+    background-size: cover;
+    color: #fff;
+}
+
+.banner .container {
+    padding-top:6.5%;
+    padding-bottom:6.5%;
+}
+
+.banner-info {
+    float: right;
+    margin:9em 0em 0 0;
+}
+
+.banner-info h3 {
+    font-size: 4em;
+    font-weight: 400;
+    text-align: right;
+    margin: 0 auto;
+    line-height: 1.7em;
+    letter-spacing: 4px;
+}
+
+.banner-info p {
+    font-size: 1em;
+    width: 69%;
+    padding-top: 14px;
+    text-align: right;
+    float: right;
+    line-height: 2.5em;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    max-width: 1140px;
+    list-style: none;
+    text-align: center;
+}
+
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 2px 2px;
+    min-width: 376px;
+    height: 270px;
+    width: 1%;
+    background: #0c2846;
+}
+
+.grid figure figcaption {
+    padding: 0 2em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: left;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure h3 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 3.5em;
+    position: relative;
+    padding: 0.5em 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 1em 0 0.25em;
+    padding: 0.4em 1em;
+    background: hsla(0, 7%, 8%, 0.76);
+    color: #29c0ff;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 75%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-360px,0,0);
+    transform: translate3d(-360px,0,0);
+}
+
+.grid figure:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+footer {
+    padding: 4em 0;
+    background-color: #242424;
+}
+
+footer .container div {
+    margin-top: 0em;
+    padding: 0;
+}
+
+#footer-nav {
+    width: 25%;
+}
+
+#footer-nav h3 {
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    margin-bottom: .5em;
+    color: #fff;
+}
+
+#footer-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer-nav ul li {
+    display: block;
+}
+
+#footer-nav ul li a {
+    display: block;
+    padding: 5px 0;
+    color: #848484;
+    font-size: 1em;
+}
+
+#footer-nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer-nav  p {
+    color: #848484;
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+.container:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 14px;
+    right: 3%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/to-top.png") no-repeat 0px 0px;
+}
+
+@media(max-width:1199px) {
+    .grid figure {
+        width: 49%;
+    }
+
+    .grid figure p {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+@media(max-width:1024px) {
+    .nav > li > a {
+        margin: 0 18px !important;
+    }
+
+    .navigation {
+        float: right;
+        width: 80%;
+        margin-top: 18px;
+    }
+
+    .banner {
+        min-height: 386px;
+    }
+
+    .banner-info {
+        float: right;
+        margin: 3em 0em 0 0;
+    }
+
+    .banner-info h3 {
+        font-size: 3.3em;
+    }
+
+    #recrutement .summary, #recrutement .steps {
+        display: block;
+        width: 100%;
+    }
+
+    #recrutement .steps ul {
+        margin: 20px 0 0 0;
+        padding: 33px 0;
+    }
+
+    .header-nav {
+        padding: 0em 0;
+    }
+
+    footer {
+        padding: 3em 0;
+    }
+
+    .banner-info p {
+        padding: 0;
+    }
+
+    .nav > li > a {
+        margin: 0 15px !important;
+    }
+}
+
+@media(max-width:991px) {
+    .nav > li > a {
+        margin: 0 9px !important;
+        font-size: 1.2em;
+    }
+
+    .navbar-nav > li {
+        display: inline-block !important;
+        margin: 0 6px !important;
+    }
+
+    .banner-info p {
+        width: 79%;
+    }
+
+    .grid figure {
+        width: 100%;
+    }
+
+    .banner {
+        min-height: 318px;
+
+    }
+
+    .banner-info h3 {
+        font-size: 3.1em;
+    }
+
+    #presentation {
+        padding: 15px 0;
+    }
+
+    section p, section li {
+        font-size: .95em;
+    }
+
+    footer {
+        padding: 2em 0 1em;
+    }
+
+    #footer-nav, #contact {
+        margin-top: 0em;
+        padding: 0;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    .navigation {
+        float: right;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .nav > li > a {
+        margin: 0 11px !important;
+    }
+}
+
+@media(max-width:800px){
+    .nav > li > a {
+        margin: 0 5px !important;
+    }
+}
+
+@media(max-width:768px) {
+    .nav > li > a {
+        margin: 0 9px !important;
+        font-size: 1.2em;
+    }
+
+    .navbar-nav > li {
+        display: inline-block !important;
+        margin: 0 6px !important;
+    }
+
+    .banner-info p {
+        width: 80%;
+    }
+
+    .banner {
+        min-height: 318px;
+    }
+
+    .banner-info h3{
+        font-size: 3.1em;
+    }
+
+    section p, section li {
+        font-size: .95em;
+    }
+
+    footer {
+        padding: 2em 0 1em;
+    }
+
+    .navigation {
+        float: right;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width:767px) {
+    .navbar-toggle {
+        margin-top: -3px;
+    }
+
+    .navbar-nav > li {
+        display: block !important;
+        margin: 0 6px !important;
+    }
+
+    .navbar-nav {
+        margin: 0px!important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #ddd;
+        background-color: #29c0ff !important;
+    }
+
+    .navigation {
+        margin-top: 16px;
+    }
+
+    .navbar-toggle {
+        margin-top: 0px;
+    }
+
+    .navbar-nav > li {
+        display: inline !important;
+        margin: 0 6px;
+        text-align: right;
+    }
+
+    .navbar-nav {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width:667px) {
+    .navigation {
+        margin-top: 11px;
+    }
+
+    .conseil-wrapper div {
+        display: none;
+    }
+
+    .conseil-wrapper ul {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media(max-width:640px) {
+    .banner-info h3{
+        font-size: 2.5em;
+    }
+
+    .banner {
+        min-height: 280px;
+    }
+
+    .banner-info {
+        margin: 5em 0em 0 0;
+    }
+
+    .banner-info p {
+        width: 84%;
+        letter-spacing: 5px;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #ddd;
+        background-color: #29c0ff !important;
+    }
+
+    section p, section li {
+        font-size: .95em;
+    }
+
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: #ff6857 !important;
+        transition:0.5s all;
+    }
+
+    .navbar-collapse {
+        border-top: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+}
+
+@media(max-width:600px) {
+    .grid figure {
+        width: 100%;
+        height: 256px;
+        margin: 2px 0;
+    }
+}
+
+@media(max-width:480px) {
+    section p, section li {
+        font-size: 1em;
+        line-height: 1.8em;
+    }
+
+    .logo a img {
+        width: 80%;
+    }
+
+    .navigation {
+        margin-top: 10px;
+    }
+
+    .banner-info {
+        margin: 5em 0em 0 0;
+    }
+
+    .banner-info h3 {
+        font-size: 1.9em;
+    }
+
+    .banner-info p {
+        width: 100%;
+        font-size: .9em;
+        letter-spacing: 4px;
+    }
+}
+
+@media(max-width:414px) {
+    .navigation {
+        width: 55%;
+    }
+
+    .banner {
+        min-height: 195px;
+    }
+
+    .banner-info {
+        margin: 2em 0em 0 0;
+    }
+
+    #presentation ul li {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:384px) {
+    .navigation {
+        width: 50%;
+    }
+
+    .grid figure {
+        min-width: 330px;
+        height: 223px;
+    }
+
+
+    .grid figure h3 {
+        margin-top: 1.5em;
+    }
+}
+
+@media(max-width:375px) {
+    .navigation {
+        width: 51%;
+    }
+}
+
+@media(max-width:320px) {
+    .navigation {
+        width: 42%;
+    }
+
+    .logo a img {
+        width: 76%;
+    }
+
+    .banner {
+        min-height: 172px;
+    }
+
+    .banner-info h3 {
+        font-size: 1.4em;
+    }
+
+    .banner-info p {
+        width: 100%;
+        letter-spacing: 1px;
+        font-size: .83em;
+    }
+
+    section p, section li {
+        font-size: .9em;
+    }
+
+    footer .container div {
+        width: 100%;
+        text-align: center;
+    }
+
+    #presentation {
+        padding: 15px 0;
+    }
+
+    .navbar-toggle {
+        margin-right: 0px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin: 7.5px 0px;
+    }
+
+    .grid figure {
+        min-width: 330px;
+        height: 203px;
+    }
+}
