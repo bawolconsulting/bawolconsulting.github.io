@@ -315,7 +315,7 @@ ul.nav.navbar-nav li a.active {
 }
 
 .banner-info h3 {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 400;
     text-align: right;
     margin: 0 auto;
@@ -332,6 +332,41 @@ ul.nav.navbar-nav li a.active {
     line-height: 2.5em;
     font-weight: 400;
     letter-spacing: 7px;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+  
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+.video-wrapper {
+    top: 5em;
+    padding-bottom: 26.25%;
+}
+
+.video-wrapper .embed-responsive-item {
+    width: 90%;
 }
 
 .grid {
@@ -474,6 +509,25 @@ footer .container div {
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
     }
+
+    .banner {
+        min-height: 386px;
+    }
+
+    .banner-info {
+        float: right;
+        margin: 3em 0em 0 0;
+    }
+
+    .video-wrapper {
+        clear: both;
+        top: 1em;
+        padding-bottom: 56.25%;
+    }
+    
+    .video-wrapper .embed-responsive-item {
+        width: 100%;
+    }
 }
 
 @media(max-width:1024px) {
@@ -485,15 +539,6 @@ footer .container div {
         float: right;
         width: 80%;
         margin-top: 18px;
-    }
-
-    .banner {
-        min-height: 386px;
-    }
-
-    .banner-info {
-        float: right;
-        margin: 3em 0em 0 0;
     }
 
     .banner-info h3 {
