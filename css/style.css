@@ -176,7 +176,7 @@ footer .container div {
 
 #conseil ul li {
     list-style: none;
-    background: url("../images/icons/chevron-right.svg") no-repeat 0 0.5em;
+    background: url(../images/icons/chevron-right.svg) no-repeat 0 0.5em;
     background-size: 1em;
     padding-left: 1em;
     color: #eb5424;
@@ -202,7 +202,7 @@ footer .container div {
 }
 
 #contact {
-    width: 75%;
+    float: left;
 }
 
 #contact h3 {
@@ -298,7 +298,7 @@ ul.nav.navbar-nav li a.active {
 }
 
 .banner {
-    background: url('../images/banner.jpg') no-repeat -0px 0;
+    background: url(../images/banner.jpg) no-repeat -0px 0;
     min-height: 670px;
     background-size: cover;
     color: #fff;
@@ -445,6 +445,7 @@ footer .container div {
 }
 
 #footer-nav {
+    float: left;
     width: 25%;
 }
 
@@ -483,6 +484,19 @@ footer .container div {
     padding: 5px 0;
 }
 
+#datadock {
+    float: right;
+}
+
+#datadock {
+    background-image: url(../images/datadocke.png);
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    width: 200px;
+    height: 216px;
+  }
+
 .container:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
 
 #toTop {
@@ -496,7 +510,7 @@ footer .container div {
     height: 40px;
     border: none;
     text-indent: 100%;
-    background: url("../images/to-top.png") no-repeat 0px 0px;
+    background: url(../images/to-top.png) no-repeat 0px 0px;
 }
 
 @media(max-width:1199px) {
@@ -612,11 +626,18 @@ footer .container div {
         padding: 2em 0 1em;
     }
 
-    #footer-nav, #contact {
+    #footer-nav, #contact, #datadock {
         margin-top: 0em;
         padding: 0;
         margin-bottom: 2em;
+    }
+
+    #footer-nav, #contact {
         width: 100%;
+    }
+
+    #datadock {
+        float: left;
     }
 
     .navigation {
